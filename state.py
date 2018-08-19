@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 
-import os
-import requests
-import subprocess
+import subprocess, os
 
-try:
-    assert(requests.get("http://www.google.com").status_code == 200)
-    subprocess.run(['/home/z/.config/polybar/gmail/run.py'])
+s = subprocess.check_output("nmcli networking connectivity check", shell=True)
 
-except Exception as foo:
+if b'full' in s:
+    os.system('~/.config/polybar/gmail/run.py')
+if b'limited' in s:
     print('')
 
