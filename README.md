@@ -7,7 +7,8 @@ I use [Polybar](https://github.com/jaagr/polybar) and use this repo as module to
 
 ```
 git clone https://github.com/SyfiMalik/gmail-notifications.git ~/.config/polybar/ 
-cd ~/.config/polybar/gmail-notifications
+mv ~/.config/polybar/gmail-notifications ~/.config/polybar/gmail
+cd ~/.config/polybar/gmail
 ./run.py
 ```
 
@@ -18,9 +19,9 @@ Add these lines to your polybar main config.
 ```ini
 [module/gmail]
 type = custom/script
-exec = ~/.config/polybar/gmail-notifications/run.py
+exec = ~/.config/polybar/gmail/launch.py
 tail = true
 click-left = xdg-open https://mail.google.com
 ```
 
-and yeah, don't forget to enable 'gmail' module. :P
+and yeah, don't forget to enable 'gmail' module. 
