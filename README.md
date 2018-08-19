@@ -1,4 +1,5 @@
 # Gmail Notifications
+![image](https://user-images.githubusercontent.com/36492651/44306373-08f5ea00-a3a7-11e8-9347-8a84bcb4efab.png)
 
 I use [Polybar](https://github.com/jaagr/polybar) and use this repo as module to it for getting notified about my gmail.
 
